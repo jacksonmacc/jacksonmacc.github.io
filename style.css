@@ -44,6 +44,14 @@ a:hover {
     flex-grow: 1;
 }
 
+#footer {
+    display: flex;
+    gap: 2%;
+    background-color: hsl(var(--theme-hue), 5%, 10%);
+    margin-top: 0;
+    padding: 10px 20%;
+}
+
 @media screen and (max-width: 480px) {
     #header {
         width: 100%;
@@ -55,16 +63,11 @@ a:hover {
     }
 
     #content {
-        width: 90%;
-        padding: 0;
-        align-self: center;
+        margin: 0;
+        padding: 0 10px;
     }
 
     #footer {
-        display: flex;
-        gap: 2%;
-        background-color: hsl(var(--theme-hue), 5%, 10%);
-        margin-top: 0;
         padding: 10px 10px;
     }
 }
@@ -87,8 +90,9 @@ a:hover {
 
 #header a {
     text-decoration: none;
-    margin-bottom: 5px;
 }
+
+
 
 
 #boidCanvas {
