@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        let r = document.querySelector(":root");
+        r.style.setProperty("--theme-hue", Math.random() * 255)
+    </script>
+</head>
+
+<body>
+    <script src="boid_index.js" type="module"></script>
+    <header id="header">
+        <h1><a href="/">Jackson MacCormick</a></h1>
+        <a href="test">GitHub</a>
+    </header>
+    <div id="content">
+        <canvas id="boidCanvas"></canvas>
+        <p>This is a boid simulation, which is a very simple model for emulating flock behaviour (birds, ants, etc).
+            If you let the simulation run for a bit, all of the boids will begin to settle into groups.
+            This one is rendered on the GPU, using raw WebGL.
+        </p>
+        <p>
+            ...the actual simulation is in Javascript though, so its a bit slow.
+        </p>
+    </div>
+    <footer id="footer">
+        <a href="test">Source Code</a>|<a href="#top">Back To Top</a>
+    </footer>
+
+</body>
+
+</html>
