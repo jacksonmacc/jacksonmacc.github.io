@@ -63,8 +63,9 @@ a:hover {
     }
 
     #content {
-        margin: 0;
-        padding: 0 10px;
+        width: 90%;
+        padding: 0;
+        align-self: center;
     }
 
     #footer {
